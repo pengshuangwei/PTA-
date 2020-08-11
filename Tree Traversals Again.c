@@ -35,7 +35,7 @@ BinTree CreateTree()
         if (strcmp(ch, "Push") == 0) {
             Tmp = (BinTree)malloc(sizeof(struct TreeNode));
             if (!Tmp) {
-                printf("ÉêÇëÊ§°Ü");
+                printf("Ã‰ÃªÃ‡Ã«ÃŠÂ§Â°Ãœ");
             }
             if (!Root && isfound == 1) {
                 Root = Tmp; 
@@ -78,7 +78,7 @@ void PostOrderTraversal(BinTree BT)
             count = 0;
         }
         else {
-            printf("-");
+            printf(" ");
         }
         printf("%d", BT->x);
     }

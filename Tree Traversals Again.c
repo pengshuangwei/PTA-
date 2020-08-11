@@ -79,6 +79,7 @@ void PostOrderTraversal(BinTree BT)
         }
         else {
             printf(" ");
+            printf("------->");
         }
         printf("%d", BT->x);
     }

@@ -84,3 +84,7 @@ void PostOrderTraversal(BinTree BT)
         printf("%d", BT->x);
     }
 }
+/*
+最大的错误在于想当然的直接将数据加在了左结点。
+
+*/

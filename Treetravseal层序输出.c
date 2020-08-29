@@ -37,11 +37,19 @@ int main()
 	pTree Root = NULL;
 	scanf_s("%d", &num);
 	Pre = (int*)malloc(sizeof(int) * num);
+	if (!Pre) {
+		printf("ERROR");
+		return -1;
+	}
 	In = (int*)malloc(sizeof(int) * num);
+	if (!In) {
+		printf("ERROR");
+		return -1;
+	}
 	ReadData(Pre, In, num);
 	for (i = 0; i < num; i++) {
-		printf("%d\t", Pre[i]);
-		printf("%d\n", In[i]);
+		printf("%d\t", *(Pre+i));
+		printf("%d\n", *(In+i));
 	}
 	Root = CreateTree(Root, Pre, 0, In, 0, num);
 	PostTravsal(Root, num, Queue);

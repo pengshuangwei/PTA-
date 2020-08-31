@@ -71,7 +71,7 @@ void Union(Set set)
 	scanf_s("%d %d", &c1, &c2);
 	Root1 = Find(set, c1);
 	Root2 = Find(set, c2);
-	if (Root1 <= Root2) {
+	if (set[Root1].parent <= set[Root2].parent) {
 		set[Root1].parent += set[Root2].parent;
 		set[Root2].parent = Root1;
 	}
